@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JARVIS Local Assistant</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="title">JARVIS</div>
+      <div id="stateLabel" class="state idle">Idle</div>
+    </header>
+
+    <main>
+      <canvas id="particleCanvas"></canvas>
+      <section class="info-panel">
+        <h2>Conversation</h2>
+        <p><strong>You:</strong> <span id="transcript">Waiting for wake word: “Hey JARVIS”</span></p>
+        <p><strong>JARVIS:</strong> <span id="response">Systems online.</span></p>
+      </section>
+    </main>
+
+    <footer>
+      <button id="confirmButton" class="hidden">Confirm Pending Action</button>
+      <small>100% local • C++ orchestration • WebView2 UI</small>
+    </footer>
+  </div>
+
+  <script src="./particles.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
